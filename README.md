@@ -1,6 +1,12 @@
 ShopifyBundle
 ==============
 
+[![Build Status](https://travis-ci.org/Adezandee/shopify-bundle.svg?branch=master)](https://travis-ci.org/Adezandee/shopify-bundle)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/Adezandee/shopify-bundle/badges/quality-score.png?s=428d4a1b2beeb9d96d044a54db2de0b7f652563b)](https://scrutinizer-ci.com/g/Adezandee/shopify-bundle/)
+[![Code Coverage](https://scrutinizer-ci.com/g/Adezandee/shopify-bundle/badges/coverage.png?s=4de432680ffb851a6ad683354ca1e7c70682cb35)](https://scrutinizer-ci.com/g/Adezandee/shopify-bundle/)
+[![Total Downloads](https://poser.pugx.org/adezandee/shopify-bundle/downloads.png)](https://packagist.org/packages/adezandee/shopify-bundle)
+[![License](https://poser.pugx.org/adezandee/shopify-bundle/license.png)](https://packagist.org/packages/adezandee/shopify-bundle)
+
 Symfony2 Bundle to interact with a Shopify Store (API Call)
 
 ### Configuration
