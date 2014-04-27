@@ -40,10 +40,16 @@ class CustomCollectionExporterTest extends ShopifyTestCase
         $customCollection = $this->exporter->export($customCollection);
         $this->assertNotNull($customCollection->getId());
 
+        // API Call limit
+        usleep(50000);
+
         // Update CustomCollection
         $customCollection->setTitle('Updated CustomCollection1');
         $updated = $this->exporter->export($customCollection);
         $this->assertEquals('Updated CustomCollection1', $updated->getTitle());
+
+        // API Call limit
+        usleep(50000);
 
         // Delete the CustomCollection.
         $deleted = $this->exporter->remove($customCollection);

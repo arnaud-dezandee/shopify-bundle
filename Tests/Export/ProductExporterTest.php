@@ -36,10 +36,16 @@ class ProductExporterTest extends ShopifyTestCase
         $product = $this->exporter->export($product);
         $this->assertNotNull($product->getId());
 
+        // API Call limit
+        usleep(50000);
+
         // Update Product
         $product->setTitle('Updated Product1');
         $updated = $this->exporter->export($product);
         $this->assertEquals('Updated Product1', $updated->getTitle());
+
+        // API Call limit
+        usleep(50000);
 
         // Delete the Product.
         $deleted = $this->exporter->remove($product);

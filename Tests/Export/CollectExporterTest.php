@@ -36,6 +36,9 @@ class CollectExporterTest extends ShopifyTestCase
         $this->assertNotNull($collect->getId());
         $this->assertFalse($collect->isFeatured());
 
+        // API Call limit
+        usleep(50000);
+
         // Delete the Collect.
         $deleted = $this->exporter->remove($collect);
         $this->assertTrue($deleted);
