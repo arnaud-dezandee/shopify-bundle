@@ -2,6 +2,7 @@
 
 namespace Adezandee\ShopifyBundle\Export;
 
+use JMS\Serializer\SerializerBuilder;
 use JMS\Serializer\SerializerInterface;
 
 /**
@@ -22,15 +23,17 @@ abstract class ShopifyExporter
     protected $options;
 
     /**
-     * Constructor creates dependency objects
-     *
-     * @param array               $options
-     * @param SerializerInterface $serializer
+     * @param array $options
      */
-    public function __construct($options, SerializerInterface $serializer)
+    public function __construct($options)
     {
-        $this->options    = $options;
-        $this->serializer = $serializer;
+        $this->options = $options;
+
+        $builder = new SerializerBuilder();
+        $this->serializer = $builder
+            ->addMetadataDir(realpath(__DIR__.'/../Resources/serializer'))
+            ->build()
+        ;
     }
 
     protected function baseUrl()

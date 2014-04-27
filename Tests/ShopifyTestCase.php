@@ -27,6 +27,9 @@ class ShopifyTestCase extends \PHPUnit_Framework_TestCase
         );
 
         $builder = new SerializerBuilder();
-        $this->serializer = $builder->addMetadataDir(realpath(__DIR__.'/../Resources/serializer'))->build();
+        $this->serializer = $builder
+            ->addMetadataDir(realpath(__DIR__.'/../Resources/serializer'))
+            ->build()
+        ;
     }
 }

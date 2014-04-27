@@ -1,0 +1,14 @@
+language: php
+
+notifications:
+  email: false
+
+php:
+  - 5.4
+  - 5.5
+
+before_script:
+  - composer selfupdate
+  - composer install --quiet --prefer-dist --no-interaction
+
+script: bin/phpunit -v --coverage-text

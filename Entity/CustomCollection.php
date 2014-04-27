@@ -84,49 +84,81 @@ class CustomCollection
 
     /**
      * @param int $id
+     *
+     * @return $this
      */
     public function setId($id)
     {
         $this->id = $id;
+
+        return $this;
     }
 
     /**
      * @param array $collects
+     *
+     * @return $this
      */
     public function setCollects($collects)
     {
         $this->collects = $collects;
+
+        return $this;
     }
 
     /**
      * @param CustomCollectionImage $image
+     *
+     * @return $this
      */
     public function setImage(CustomCollectionImage $image)
     {
         $this->image = $image;
+
+        return $this;
     }
 
     /**
      * @param string $title
+     *
+     * @return $this
      */
     public function setTitle($title)
     {
         $this->title = $title;
+
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getTitle()
+    {
+        return $this->title;
     }
 
     /**
      * @param string $bodyHtml
+     *
+     * @return $this
      */
     public function setBodyHtml($bodyHtml)
     {
         $this->bodyHtml = $bodyHtml;
+
+        return $this;
     }
 
     /**
      * @param string $handle
+     *
+     * @return $this
      */
     public function setHandle($handle)
     {
         $this->handle = $handle;
+
+        return $this;
     }
 }
