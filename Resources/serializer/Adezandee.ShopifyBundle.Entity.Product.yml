@@ -1,0 +1,32 @@
+Adezandee\ShopifyBundle\Entity\Product:
+    properties:
+        bodyHtml:
+            type: string
+        createdAt:
+            type: DateTime<'Y-m-d\TH:i:sO'>
+        handle:
+            type: string
+        id:
+            type: integer
+        images:
+            type: array<Adezandee\ShopifyBundle\Entity\ProductImage>
+        options:
+            type: array<Adezandee\ShopifyBundle\Entity\ProductOption>
+        productType:
+            type: string
+        publishedAt:
+            type: DateTime<'Y-m-d\TH:i:sO'>
+        publishedScope:
+            type: string
+        tags:
+            type: string
+        templateSuffix:
+            type: string
+        title:
+            type: string
+        updatedAt:
+            type: DateTime<'Y-m-d\TH:i:sO'>
+        variants:
+            type: array<Adezandee\ShopifyBundle\Entity\ProductVariant>
+        vendor:
+            type: string

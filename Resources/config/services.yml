@@ -1,0 +1,12 @@
+services:
+    shopify.product_exporter:
+        class: Adezandee\ShopifyBundle\Export\ProductExporter
+        arguments: [%shopify.options%, @serializer]
+
+    shopify.custom_collection_exporter:
+        class: Adezandee\ShopifyBundle\Export\CustomCollectionExporter
+        arguments: [%shopify.options%, @serializer]
+
+    shopify.collect_exporter:
+        class: Adezandee\ShopifyBundle\Export\CollectExporter
+        arguments: [%shopify.options%, @serializer]

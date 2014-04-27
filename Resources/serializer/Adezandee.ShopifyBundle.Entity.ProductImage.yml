@@ -1,0 +1,14 @@
+Adezandee\ShopifyBundle\Entity\ProductImage:
+    properties:
+        id:
+            type: integer
+        position:
+            type: integer
+        productId:
+            type: integer
+        src:
+            type: string
+        createdAt:
+            type: DateTime<'Y-m-d\TH:i:sO'>
+        updatedAt:
+            type: DateTime<'Y-m-d\TH:i:sO'>

@@ -1,0 +1,42 @@
+Adezandee\ShopifyBundle\Entity\ProductVariant:
+    properties:
+        barcode:
+            type: string
+        compareAtPrice:
+            type: string
+        createdAt:
+            type: DateTime<'Y-m-d\TH:i:sO'>
+        fulfillmentService:
+            type: string
+        grams:
+            type: integer
+        id:
+            type: integer
+        inventoryManagement:
+            type: string
+        inventoryPolicy:
+            type: string
+        option1:
+            type: string
+        option2:
+            type: string
+        option3:
+            type: string
+        position:
+            type: integer
+        price:
+            type: string
+        productId:
+            type: integer
+        requiresShipping:
+            type: boolean
+        sku:
+            type: string
+        taxable:
+            type: boolean
+        title:
+            type: string
+        updatedAt:
+            type: DateTime<'Y-m-d\TH:i:sO'>
+        inventoryQuantity:
+            type: integer

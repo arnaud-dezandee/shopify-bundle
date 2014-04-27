@@ -1,0 +1,10 @@
+Adezandee\ShopifyBundle\Entity\ProductOption:
+    properties:
+        id:
+            type: integer
+        name:
+            type: string
+        position:
+            type: integer
+        productId:
+            type: integer
