@@ -1,0 +1,4 @@
+Adezandee\ShopifyBundle\Wrapper\CollectWrapper:
+    properties:
+        collect:
+            type: Adezandee\ShopifyBundle\Entity\Collect

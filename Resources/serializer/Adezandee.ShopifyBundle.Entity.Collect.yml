@@ -1,0 +1,18 @@
+Adezandee\ShopifyBundle\Entity\Collect:
+    properties:
+        collectionId:
+            type: integer
+        createdAt:
+            type: DateTime<'Y-m-d\TH:i:sO'>
+        featured:
+            type: boolean
+        id:
+            type: integer
+        position:
+            type: string
+        productId:
+            type: integer
+        sortValue:
+            type: string
+        updatedAt:
+            type: DateTime<'Y-m-d\TH:i:sO'>

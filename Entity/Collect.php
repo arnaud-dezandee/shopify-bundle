@@ -1,8 +1,6 @@
 <?php
 namespace Adezandee\ShopifyBundle\Entity;
 
-use JMS\Serializer\Annotation\Type;
-
 /**
  * Class Collect
  *
@@ -12,47 +10,41 @@ class Collect
 {
     /**
      * @var integer
-     *
-     * @Type("integer")
      */
     protected $collectionId;
 
     /**
-     * @Type("DateTime<'Y-m-d\TH:i:sO'>")
+     * @var \Datetime
      */
     protected $createdAt;
 
     /**
-     * @Type("boolean")
+     * @var bool
      */
     protected $featured;
 
     /**
      * @var integer
-     *
-     * @Type("integer")
      */
     protected $id;
 
     /**
-     * @Type("string")
+     * @var string
      */
     protected $position;
 
     /**
      * @var integer
-     *
-     * @Type("integer")
      */
     protected $productId;
 
     /**
-     * @Type("string")
+     * @var string
      */
     protected $sortValue;
 
     /**
-     * @Type("DateTime<'Y-m-d\TH:i:sO'>")
+     * @var \Datetime
      */
     protected $updatedAt;
 
