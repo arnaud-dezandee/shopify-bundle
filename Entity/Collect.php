@@ -50,10 +50,14 @@ class Collect
 
     /**
      * @param integer $productId
+     *
+     * @return $this
      */
     public function setProductId($productId)
     {
         $this->productId = $productId;
+
+        return $this;
     }
 
     /**
@@ -66,10 +70,14 @@ class Collect
 
     /**
      * @param int $collectionId
+     *
+     * @return $this
      */
     public function setCollectionId($collectionId)
     {
         $this->collectionId = $collectionId;
+
+        return $this;
     }
 
     /**
@@ -94,5 +102,49 @@ class Collect
     public function getId()
     {
         return $this->id;
+    }
+
+    /**
+     * @return bool
+     */
+    public function isFeatured()
+    {
+        return $this->featured;
+    }
+
+    /**
+     * @param bool $featured
+     *
+     * @return $this
+     */
+    public function setFeatured($featured)
+    {
+        $this->featured = $featured;
+
+        return $this;
+    }
+
+    /**
+     * @param string $position
+     *
+     * @return $this
+     */
+    public function setPosition($position)
+    {
+        $this->position = $position;
+
+        return $this;
+    }
+
+    /**
+     * @param string $sortValue
+     *
+     * @return $this
+     */
+    public function setSortValue($sortValue)
+    {
+        $this->sortValue = $sortValue;
+
+        return $this;
     }
 }

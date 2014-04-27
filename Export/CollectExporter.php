@@ -32,7 +32,7 @@ class CollectExporter extends ShopifyExporter
     public function export(Collect $collect)
     {
         if (null !== $collect->getId()) {
-            throw new \ErrorException('You can not export the same Collect object');
+            throw new \ErrorException('You can not update a Collect object');
         } else {
             $request = new PostJson($this->exportUrl(), new CollectWrapper($collect), $this->serializer);
         }
@@ -46,7 +46,7 @@ class CollectExporter extends ShopifyExporter
     /**
      * @param Collect $collect
      *
-     * @return Collect
+     * @return bool
      */
     public function remove(Collect $collect)
     {
@@ -58,6 +58,6 @@ class CollectExporter extends ShopifyExporter
 
         $deleted = $request->makeRequest();
 
-        return $deleted;
+        return (bool) $deleted;
     }
 }
