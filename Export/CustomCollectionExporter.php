@@ -1,4 +1,5 @@
 <?php
+
 namespace Adezandee\ShopifyBundle\Export;
 
 use Adezandee\ShopifyBundle\Call\DeleteJson;
@@ -37,18 +38,21 @@ class CustomCollectionExporter extends ShopifyExporter
     public function export(CustomCollection $collection)
     {
         if (null !== $collection->getId()) {
-            $request = new PutJson($this->updateUrl($collection), new CustomCollectionWrapper($collection));
+            $request = new PutJson(
+                $this->updateUrl($collection),
+                new CustomCollectionWrapper($collection),
+                $this->serializer
+            );
         } else {
-            $request = new PostJson($this->exportUrl(), new CustomCollectionWrapper($collection));
+            $request = new PostJson(
+                $this->exportUrl(),
+                new CustomCollectionWrapper($collection),
+                $this->serializer
+            );
         }
-        $request->generateRequestData($this->serializer);
 
         /** @var CustomCollectionWrapper $collectionWrapper */
-        $collectionWrapper = $this->caller->call($request);
-
-        if (!in_array($request->getStatusCode(), array(200, 201))) {
-            throw new \ErrorException($request->getStatus());
-        }
+        $collectionWrapper = $request->makeRequest();
 
         return $collectionWrapper->getCustomCollection();
     }
@@ -65,12 +69,9 @@ class CustomCollectionExporter extends ShopifyExporter
         } else {
             $request = new DeleteJson($this->removeUrl($collection), new CustomCollectionWrapper($collection));
         }
-        $this->caller->call($request);
 
-        if (!in_array($request->getStatusCode(), array(200))) {
-            throw new \ErrorException($request->getStatus());
-        }
+        $deleted = $request->makeRequest();
 
-        return true;
+        return (bool) $deleted;
     }
 }

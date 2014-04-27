@@ -1,8 +1,8 @@
 <?php
+
 namespace Adezandee\ShopifyBundle\Wrapper;
 
 use Adezandee\ShopifyBundle\Entity\CustomCollection;
-use JMS\Serializer\Annotation\Type;
 
 /**
  * Class CustomCollectionWrapper
@@ -13,8 +13,6 @@ class CustomCollectionWrapper
 {
     /**
      * @var CustomCollection
-     *
-     * @Type("Adezandee\ShopifyBundle\Entity\CustomCollection")
      */
     protected $customCollection;
 

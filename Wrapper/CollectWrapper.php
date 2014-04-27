@@ -1,8 +1,8 @@
 <?php
+
 namespace Adezandee\ShopifyBundle\Wrapper;
 
 use Adezandee\ShopifyBundle\Entity\Collect;
-use JMS\Serializer\Annotation\Type;
 
 /**
  * Class CollectWrapper
@@ -13,8 +13,6 @@ class CollectWrapper
 {
     /**
      * @var Collect
-     *
-     * @Type("Adezandee\ShopifyBundle\Entity\Collect")
      */
     protected $collect;
 

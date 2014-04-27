@@ -51,7 +51,7 @@ class CollectExporter extends ShopifyExporter
     public function remove(Collect $collect)
     {
         if (null == $collect->getId()) {
-            throw new \ErrorException('Can not remove a non existent Product !');
+            throw new \ErrorException('Can not remove a non existent Collect !');
         } else {
             $request = new DeleteJson($this->removeUrl($collect));
         }

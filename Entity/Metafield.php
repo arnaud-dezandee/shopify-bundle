@@ -1,7 +1,6 @@
 <?php
-namespace Adezandee\ShopifyBundle\Entity;
 
-use JMS\Serializer\Annotation\Type;
+namespace Adezandee\ShopifyBundle\Entity;
 
 /**
  * Class Metafield
@@ -11,52 +10,52 @@ use JMS\Serializer\Annotation\Type;
 class Metafield
 {
     /**
-     * @Type("DateTime<'Y-m-d\TH:i:sO'>")
+     * @var \Datetime
      */
     protected $createdAt;
 
     /**
-     * @Type("string")
+     * @var string
      */
     protected $description;
 
     /**
-     * @Type("integer")
+     * @var integer
      */
     protected $id;
 
     /**
-     * @Type("string")
+     * @var string
      */
     protected $key;
 
     /**
-     * @Type("string")
+     * @var string
      */
     protected $namespace;
 
     /**
-     * @Type("integer")
+     * @var integer
      */
     protected $ownerId;
 
     /**
-     * @Type("string")
+     * @var string
      */
     protected $ownerResource;
 
     /**
-     * @Type("string")
+     * @var string
      */
     protected $value;
 
     /**
-     * @Type("string")
+     * @var string
      */
     protected $valueType;
 
     /**
-     * @Type("DateTime<'Y-m-d\TH:i:sO'>")
+     * @var \Datetime
      */
     protected $updatedAt;
 }

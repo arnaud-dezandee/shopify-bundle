@@ -1,4 +1,5 @@
 <?php
+
 namespace Adezandee\ShopifyBundle\Wrapper;
 
 use Adezandee\ShopifyBundle\Entity\Product;

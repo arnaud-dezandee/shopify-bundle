@@ -1,0 +1,4 @@
+Adezandee\ShopifyBundle\Wrapper\CustomCollectionWrapper:
+    properties:
+        customCollection:
+            type: Adezandee\ShopifyBundle\Entity\CustomCollection

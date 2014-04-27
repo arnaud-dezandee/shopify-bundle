@@ -1,7 +1,6 @@
 <?php
-namespace Adezandee\ShopifyBundle\Entity;
 
-use JMS\Serializer\Annotation\Type;
+namespace Adezandee\ShopifyBundle\Entity;
 
 /**
  * Class CustomCollection
@@ -12,82 +11,66 @@ class CustomCollection
 {
     /**
      * @var string
-     *
-     * @Type("string")
      */
     protected $bodyHtml;
 
     /**
      * @var string
-     *
-     * @Type("string")
      */
     protected $handle;
 
     /**
      * @var CustomCollectionImage
-     *
-     * @Type("Adezandee\ShopifyBundle\Entity\CustomCollectionImage")
      */
     protected $image;
 
     /**
      * @var integer
-     *
-     * @Type("integer")
      */
     protected $id;
 
     /**
      * @var array
-     *
-     * @Type("array<Adezandee\ShopifyBundle\Entity\Metafield>")
      */
     protected $metafields;
 
     /**
      * @var bool
-     *
-     * @Type("boolean")
      */
     protected $published;
 
     /**
-     * @Type("DateTime<'Y-m-d\TH:i:sO'>")
+     * @var \Datetime
      */
     protected $publishedAt;
 
     /**
-     * @Type("string")
+     * @var string
      */
     protected $publishedScope;
 
     /**
-     * @Type("string")
+     * @var string
      */
     protected $sortOrder;
 
     /**
-     * @Type("string")
+     * @var string
      */
     protected $templateSuffix;
 
     /**
      * @var string
-     *
-     * @Type("string")
      */
     protected $title;
 
     /**
-     * @Type("DateTime<'Y-m-d\TH:i:sO'>")
+     * @var \Datetime
      */
     protected $updatedAt;
 
     /**
      * @var array
-     *
-     * @Type("array<Adezandee\ShopifyBundle\Entity\Collect>")
      */
     protected $collects;
 

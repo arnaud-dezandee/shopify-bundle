@@ -1,0 +1,6 @@
+Adezandee\ShopifyBundle\Entity\CustomCollectionImage:
+    properties:
+        createdAt:
+            type: DateTime<'Y-m-d\TH:i:sO'>
+        src:
+            type: string

@@ -1,0 +1,22 @@
+Adezandee\ShopifyBundle\Entity\Metafield:
+    properties:
+        createdAt:
+            type: DateTime<'Y-m-d\TH:i:sO'>
+        description:
+            type: string
+        id:
+            type: integer
+        key:
+            type: string
+        namespace:
+            type: string
+        ownerId:
+            type: integer
+        ownerResource:
+            type: string
+        value:
+            type: string
+        valueType:
+            type: string
+        updatedAt:
+            type: DateTime<'Y-m-d\TH:i:sO'>

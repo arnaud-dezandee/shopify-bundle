@@ -1,0 +1,4 @@
+Adezandee\ShopifyBundle\Wrapper\ProductsWrapper:
+    properties:
+        products:
+            type: array<Adezandee\ShopifyBundle\Entity\Product>

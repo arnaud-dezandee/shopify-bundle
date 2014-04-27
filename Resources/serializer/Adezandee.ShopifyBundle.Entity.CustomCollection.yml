@@ -1,0 +1,28 @@
+Adezandee\ShopifyBundle\Entity\CustomCollection:
+    properties:
+        bodyHtml:
+            type: string
+        handle:
+            type: string
+        image:
+            type: Adezandee\ShopifyBundle\Entity\CustomCollectionImage
+        id:
+            type: integer
+        metafields:
+            type: array<Adezandee\ShopifyBundle\Entity\Metafield>
+        published:
+            type: boolean
+        publishedAt:
+            type: DateTime<'Y-m-d\TH:i:sO'>
+        publishedScope:
+            type: string
+        sortOrder:
+            type: string
+        templateSuffix:
+            type: string
+        title:
+            type: string
+        updatedAt:
+            type: DateTime<'Y-m-d\TH:i:sO'>
+        collects:
+            type: array<Adezandee\ShopifyBundle\Entity\Collect>

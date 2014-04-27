@@ -1,7 +1,6 @@
 <?php
-namespace Adezandee\ShopifyBundle\Entity;
 
-use JMS\Serializer\Annotation\Type;
+namespace Adezandee\ShopifyBundle\Entity;
 
 /**
  * Class CustomCollectionImage
@@ -12,15 +11,11 @@ class CustomCollectionImage
 {
     /**
      * @var \Datetime
-     *
-     * @Type("DateTime<'Y-m-d\TH:i:sO'>")
      */
     protected $createdAt;
 
     /**
      * @var string
-     *
-     * @Type("string")
      */
     protected $src;
 
